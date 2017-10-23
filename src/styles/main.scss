@@ -8,7 +8,9 @@ body{margin: 0;}
 $txt-color: #fff;
 
 
-body {}
+body {
+	// background-color: blue;
+}
 
 //----- DELETE
 .starter{
@@ -39,3 +41,60 @@ h2.starter-txt{
 	border-bottom: 4px solid $txt-color;
 }
 //------DELETE
+* {
+  box-sizing: border-box; }
+
+img {
+  width: 100%;
+  display: block; }
+
+#app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Futura', sans-serif;
+  background: #fff; }
+
+h1 {
+  background: #335;
+  color: #fff;
+  padding: 12px;
+  font-weight: 200; }
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.country-card {
+  width: 24%;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: .5rem; }
+
+.country-name {
+  font-size: 21px;
+  margin: .5rem 0 .25rem 0; }
+
+.country-capital {
+  font-size: 14px;
+  margin: .25rem 0;
+  padding-left: .25rem;
+  color: #aaa;
+  border-left: 1px solid #ddd; }
+
+.country-name {
+  font-size: 21px; }
+
+.country-flag {
+  width: 120px;
+  height: 80px; }
+
+.links-lang {
+	background-color: yellow;
+	height: 40px;
+	width: 200px;
+	margin-top: 0;
+	margin-left: 450px;
+
+
+}
