@@ -3,12 +3,12 @@ import request from 'superagent';
 // import showAll from '/All'
 const appContainer = document.querySelector('.countries-container')
 // appContainer.innerHTML = showAll()
-
+appContainer.innerHTML = ''
 function showAll() {
 request.get('https://restcountries.eu/rest/v2/all')
 .then(data => {
 var info = data.body;
-
+appContainer.innerHTML = ''
 info.forEach(function(obj) {
   // console.log(obj);
   var languages = obj.languages[0].nativeName
@@ -32,7 +32,7 @@ var info = data.body;
 appContainer.innerHTML = ''
 info.forEach(function(obj) {
   var nativeLang =obj.languages[0].iso639_1;
-  console.log(nativeLang);
+  // console.log(nativeLang);
   if(e === nativeLang ){
   appContainer.innerHTML += `
   <div class="country-card">
@@ -45,7 +45,6 @@ info.forEach(function(obj) {
 })
 })
 }
-
 const routes = {
   '/': showAll,
   '/languages/:id': showCountLang,
